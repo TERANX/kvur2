@@ -1,6 +1,6 @@
 from math import sqrt
 baddata = True
-while baddata == True:
+while baddata :
     try:
          a = int(input('Введите a: '))
          b = int(input('Введите b: '))
