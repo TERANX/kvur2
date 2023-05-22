@@ -1,12 +1,12 @@
 from math import sqrt
 baddata = True
-while baddata == True:
+while baddata :
     try:
          a = int(input('Введите a: '))
          b = int(input('Введите b: '))
          c = int(input('Введите c: '))
          baddata = False
-    except:
+    except ValueError:
         print('Не удалось получить данные!')
 
 D = (b * b) - (4 * a * c)
@@ -20,4 +20,4 @@ elif D == 0:
     x1 = (-b) / (2 * a)
     print(f'Уравнение имеет один корень x1 = {x1}.')
 else:
-    print('Уравнение не имеет корней')
+    print('Уравнение не имеет корней')    
